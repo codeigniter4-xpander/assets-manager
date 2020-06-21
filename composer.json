@@ -1,0 +1,20 @@
+{
+    "name": "codeigniter4-xpander/assets-manager",
+    "description": "CodeIgniter 4 Xpander Assets Manager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagus A Priambada",
+            "email": "iam.adty@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CI4Xpander_AssetsManager\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
