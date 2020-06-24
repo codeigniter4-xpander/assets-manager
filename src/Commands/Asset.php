@@ -12,5 +12,7 @@ class Asset extends \CodeIgniter\CLI\BaseCommand
     public function run(array $params = [])
     {
         $autoloader = \Config\Services::autoloader();
+
+        d($autoloader);
     }
 }
