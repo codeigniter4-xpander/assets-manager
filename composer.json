@@ -9,7 +9,9 @@
             "email": "iam.adty@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "codeigniter4-xpander/core": "dev-develop"
+    },
     "autoload": {
         "psr-4": {
             "CI4Xpander_AssetsManager\\": "src/"
