@@ -34,6 +34,12 @@ class Publish extends \CodeIgniter\CLI\BaseCommand
                     if (property_exists($rule, 'dir')) {
                         \CI4Xpander\Helpers\File::get(ROOTPATH . "vendor/{$name}/{$rule->dir}")->copy(ROOTPATH . "public/assets/vendor/{$name}");
                     }
+
+                    if (property_exists($rule, 'copy')) {
+                        foreach ((array) $rule->copy as $source => $target) {
+                            \CI4Xpander\Helpers\File::get(ROOTPATH . $source)->copy(ROOTPATH . $target);
+                        }
+                    }
                 }
             }
         }
